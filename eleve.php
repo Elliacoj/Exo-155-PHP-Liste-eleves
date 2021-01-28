@@ -2,8 +2,8 @@
 if(!isset($_GET['eleve'])) {
     header('location: index.php?error=1');
 }
-else {
-    $eleveJSON = json_decode(base64_decode($_GET['eleve']));
+
+$eleveJSON = json_decode(base64_decode($_GET['eleve']));
 ?>
 
 <!doctype html>
@@ -35,6 +35,3 @@ else {
 </body>
 </html>
 
-<?php
-}
-?>
