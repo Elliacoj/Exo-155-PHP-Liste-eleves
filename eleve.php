@@ -17,20 +17,21 @@ else {
     <title>Eleve</title>
 </head>
 <body>
-
-    <?php
-        foreach ($eleveJSON as $item => $value) {
-            if(is_array($value)) {
-                $values = implode(", ", $value);
-                echo "<div>" . $item . ": " . $values . "</div>>";
+    <div id="container">
+        <h1>Information suplémentaire</h1>
+        <?php
+            foreach ($eleveJSON as $item => $value) {
+                if(is_array($value)) {
+                    $values = implode(", ", $value);
+                    echo "<div>" . $item . ": " . $values . "</div>";
+                }
+                else {
+                    echo "<div>" . $item . ": " . $value . "</div>";
+                }
             }
-            else {
-                echo "<div>" . $item . ": " . $value . "</div>";
-            }
-        }
-        echo '<div><a href="index.php">Index</a></div>';
-    ?>
-
+            echo '<div><a href="index.php">Index</a></div>';
+        ?>
+    </div>
 </body>
 </html>
 

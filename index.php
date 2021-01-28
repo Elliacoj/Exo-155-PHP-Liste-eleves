@@ -18,6 +18,7 @@ $eleves = [ 0 => ["nom" => "Brian", "prenom" => "Dani", "age" => "45", "ville" =
 </head>
 <body>
     <div id="container">
+        <h1>Liste des élèves</h1>
         <?php
             foreach ($eleves as $eleve) {
                 $eleveJSON = base64_encode(json_encode($eleve));
