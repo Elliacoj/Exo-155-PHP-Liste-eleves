@@ -18,7 +18,7 @@ else {
 </head>
 <body>
     <div id="container">
-        <h1>Information suplémentaire</h1>
+        <h1>Information supplémentaire</h1>
         <?php
             foreach ($eleveJSON as $item => $value) {
                 if(is_array($value)) {
